@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<people>
+    <person id="0001">
+        <firstname>Michele</firstname>
+        <lastname>Neri</lastname>
+        <birthdate>1995-09-22</birthdate>
+        <activitypreference id="101">
+            <name>Running</name>
+            <description>Running to the Park</description>
+            <place>Gocciadoro</place>
+            <startdate>2017-10-13T11:50:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0002">
+        <firstname>Camilla</firstname>
+        <lastname>Moro</lastname>
+        <birthdate>1990-09-17</birthdate>
+        <activitypreference id="102">
+            <name>Boxing</name>
+            <description>Kicks my friends</description>
+            <place>Palestra Bueona Onda</place>
+            <startdate>2017-10-12T18:00:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0003">
+        <firstname>Margherita</firstname>
+        <lastname>Galli</lastname>
+        <birthdate>1990-09-10</birthdate>
+        <activitypreference id="103">
+            <name>Surfing</name>
+            <description>Surfing in the Garda Lake</description>
+            <place>Torbole Surf Club</place>
+            <startdate>2017-10-11T09:30:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0004">
+        <firstname>Silvia</firstname>
+        <lastname>Coppola</lastname>
+        <birthdate>1994-07-08</birthdate>
+        <activitypreference id="104">
+            <name>Swimming</name>
+            <description>Swimming with my friends</description>
+            <place>Piscina comunale Trento</place>
+            <startdate>2017-10-10T12:15:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0005">
+        <firstname>Lara</firstname>
+        <lastname>Pastore</lastname>
+        <birthdate>1994-05-30</birthdate>
+        <activitypreference id="105">
+            <name>Yoga</name>
+            <description>Relax yourself</description>
+            <place>Gocciadoro</place>
+            <startdate>2017-13-09T11:25:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0006">
+        <firstname>Claudia</firstname>
+        <lastname>Romano</lastname>
+        <birthdate>1992-04-03</birthdate>
+        <activitypreference id="106">
+            <name>Gym</name>
+            <description>Be as big as The Rock</description>
+            <place>Palestra DISI</place>
+            <startdate>2017-10-07T18:30:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0007">
+        <firstname>Nicoletta</firstname>
+        <lastname>Palmieri</lastname>
+        <birthdate>1999-01-15</birthdate>
+        <activitypreference id="107">
+            <name>Listening Music</name>
+            <description>Listening my favourites artists</description>
+            <place>At home</place>
+            <startdate>2017-10-10T23:45:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0008">
+        <firstname>Leonardo</firstname>
+        <lastname>Arena</lastname>
+        <birthdate>1998-08-01</birthdate>
+        <activitypreference id="108">
+            <name>Dancing</name>
+            <description>Dance with my girlfriends</description>
+            <place>Disco Sambabila</place>
+            <startdate>2017-10-01T21:00:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0009">
+        <firstname>Sara</firstname>
+        <lastname>Russo</lastname>
+        <birthdate>1998-08-18</birthdate>
+        <activitypreference id="109">
+            <name>Russing Speaking</name>
+            <description>Learning a new language</description>
+            <place>CIAL</place>
+            <startdate>2017-10-02T09:45:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0010">
+        <firstname>Christian</firstname>
+        <lastname>Bernardi</lastname>
+        <birthdate>1993-05-14</birthdate>
+        <activitypreference id="110">
+            <name>Volleyball</name>
+            <description>Play volleyball with my team mates</description>
+            <place>Trento Sport Center</place>
+            <startdate>2017-10-03T16:45:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0011">
+        <firstname>Silvia</firstname>
+        <lastname>Cattaneo</lastname>
+        <birthdate>1999-05-25</birthdate>
+        <activitypreference id="111">
+            <name>Tennis</name>
+            <description>Pair tennis Match</description>
+            <place>Trento Sport Center</place>
+            <startdate>2017-10-04T08:00:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0012">
+        <firstname>Gaia</firstname>
+        <lastname>Olivieri</lastname>
+        <birthdate>1997-07-16</birthdate>
+        <activitypreference id="112">
+            <name>Basket</name>
+            <description>Play basket with my team mates</description>
+            <place>Rovereto Barattieri Center</place>
+            <startdate>2017-10-03T18:30:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0013">
+        <firstname>Leonardo</firstname>
+        <lastname>Leone</lastname>
+        <birthdate>1991-03-03</birthdate>
+        <activitypreference id="113">
+            <name>Rugby</name>
+            <description>Play rugby with my friends</description>
+            <place>Trento Sport Center</place>
+            <startdate>2017-10-07T10:15:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0014">
+        <firstname>Cristiano</firstname>
+        <lastname>Barbieri</lastname>
+        <birthdate>1991-09-09</birthdate>
+        <activitypreference id="114">
+            <name>Football</name>
+            <description>Play football with my team mates</description>
+            <place>Stadio Quercia Rovereto</place>
+            <startdate>2017-10-10T21:00:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0015">
+        <firstname>Chiara</firstname>
+        <lastname>Vitali</lastname>
+        <birthdate>1993-08-26</birthdate>
+        <activitypreference id="115">
+            <name>Badminton</name>
+            <description>Play badminton match</description>
+            <place>Trento Sport Center</place>
+            <startdate>2017-10-08T18:45:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0016">
+        <firstname>Andrea</firstname>
+        <lastname>Ferrante</lastname>
+        <birthdate>1991-02-05</birthdate>
+        <activitypreference id="116">
+            <name>Bowling</name>
+            <description>Bowling night life</description>
+            <place>Gigajoy Dro</place>
+            <startdate>2017-10-03T23:00:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0017">
+        <firstname>Emma</firstname>
+        <lastname>De Simone</lastname>
+        <birthdate>1997-04-04</birthdate>
+        <activitypreference id="117">
+            <name>Snowboarding</name>
+            <description>Snowboarding in the Bondone Mountain</description>
+            <place>Monte Bondone</place>
+            <startdate>2017-10-30T10:00:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0018">
+        <firstname>Pietro</firstname>
+        <lastname>Silvestri</lastname>
+        <birthdate>1994-03-18</birthdate>
+        <activitypreference id="118">
+            <name>Skateboarding</name>
+            <description>Skateboarding challanges</description>
+            <place>Trento city center</place>
+            <startdate>2017-10-15T16:30:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0019">
+        <firstname>Manuel</firstname>
+        <lastname>Martinelli</lastname>
+        <birthdate>1997-03-28</birthdate>
+        <activitypreference id="119">
+            <name>Golf</name>
+            <description>Playing golf with my boss</description>
+            <place>Trento city center</place>
+            <startdate>2017-10-17T10:45:00.0</startdate>
+        </activitypreference>
+    </person>
+    <person id="0020">
+        <firstname>Roberto</firstname>
+        <lastname>Gentile</lastname>
+        <birthdate>1995-04-26</birthdate>
+        <activitypreference id="120">
+            <name>Tv Series</name>
+            <description>Watch TV Series</description>
+            <place>At home</place>
+            <startdate>2017-10-15T21:30:00.0</startdate>
+        </activitypreference>
+    </person>
+</people>
