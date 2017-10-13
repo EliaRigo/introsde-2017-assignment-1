@@ -19,11 +19,19 @@ public class Person {
 	private String lastname;
 	private String birthdate;
 	// XmlElement indicates the element to use for this field. Only used if the name in XML will be different than that in the class
-	@XmlElement(name="activitypreference ")
+	@XmlElement(name="activitypreference")
 	private ActivityPreference aPreference;	
 	// XmlAttribute indicates that this field will be serialized as an attribute
 	@XmlAttribute(name="id")
 	private Long personId;
+	
+	public Person() {
+		this.personId = (long) -1.0;
+		this.firstname = "";
+		this.lastname = "";
+		this.birthdate = "";
+		this.aPreference = new ActivityPreference();
+	}
 	
 	public Person(Long personId, String firstname, String lastname, String birthdate, Long activityPreferenceId, String name, String description, String place, String startDate) {
 		this.personId = personId;
@@ -63,6 +71,18 @@ public class Person {
 	}
 	public void setPersonId(Long personId) {
 		this.personId = personId;
+	}
+
+	@Override
+	public String toString() {
+		String tmp = "";
+		tmp += String.format("+--- Person Id: %d\n", this.personId);
+		tmp += String.format("|    +-- Firstname: %s\n", this.firstname);
+		tmp += String.format("|    +-- Lastname: %s\n", this.lastname);
+		tmp += String.format("|    +-- Birthdate: %s\n", this.birthdate);
+		tmp += this.aPreference.toString();
+		
+		return tmp;
 	}
 	
 }
