@@ -33,6 +33,14 @@ public class Person {
 		this.aPreference = new ActivityPreference();
 	}
 	
+	public Person(Long personId, String firstname, String lastname, String birthdate, ActivityPreference aPreference) {
+		this.personId = personId;
+		this.firstname = firstname;
+		this.lastname = lastname;
+		this.birthdate = birthdate;
+		this.aPreference = aPreference;
+	}
+	
 	public Person(Long personId, String firstname, String lastname, String birthdate, Long activityPreferenceId, String name, String description, String place, String startDate) {
 		this.personId = personId;
 		this.firstname = firstname;

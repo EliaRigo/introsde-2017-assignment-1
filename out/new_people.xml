@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<people>
+    <person id="21">
+        <firstname>Gianni</firstname>
+        <lastname>Longo</lastname>
+        <birthdate>1999-08-21</birthdate>
+        <activitypreference id="121">
+            <name>Cycling</name>
+            <description>Cycling in the beatiful Trentino landscape</description>
+            <place>Trentino-A.A.</place>
+            <startDate>2017-10-14T12:00:00.0</startDate>
+        </activitypreference>
+    </person>
+    <person id="22">
+        <firstname>Marco</firstname>
+        <lastname>Pinozzo</lastname>
+        <birthdate>1991-03-04</birthdate>
+        <activitypreference id="122">
+            <name>Boxe</name>
+            <description>Perform Boxe with my coach</description>
+            <place>Sanbabila Gym</place>
+            <startDate>2017-10-20T17:45:00.0</startDate>
+        </activitypreference>
+    </person>
+    <person id="23">
+        <firstname>Giuseppe</firstname>
+        <lastname>Siano</lastname>
+        <birthdate>1995-04-15</birthdate>
+        <activitypreference id="123">
+            <name>Curling</name>
+            <description>Curling with my friends</description>
+            <place>Palaghiaccio Trento</place>
+            <startDate>2017-10-29T21:00:00.0</startDate>
+        </activitypreference>
+    </person>
+</people>

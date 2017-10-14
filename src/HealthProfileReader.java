@@ -24,6 +24,9 @@ public class HealthProfileReader {
 			printAll();
 			XPathController xp = new XPathController(database);
 			System.out.println(xp.getActivityPreferenceByPeopleId(5));
+			
+			MarshallingJAXB.doMarshalling();
+			MarshallingJAXB.doUnMarshalling();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
