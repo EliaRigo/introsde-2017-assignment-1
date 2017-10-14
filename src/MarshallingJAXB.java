@@ -7,6 +7,10 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.module.jaxb.JaxbAnnotationModule;
+
 import model.ActivityPreference;
 import model.Person;
 import dao.PeopleStore;
@@ -72,7 +76,7 @@ public class MarshallingJAXB {
 	public static void doUnMarshalling() throws Exception {
 		System.out.println();
 		System.out.println("############################");
-		System.out.println("Output from our XML File: ");
+		System.out.println("Output from out/new_people.xml XML File: ");
 		// The JAXBContext instance is initialized
 		JAXBContext jc = JAXBContext.newInstance(PeopleStore.class);
 		// Create Unmarshaller
@@ -84,5 +88,33 @@ public class MarshallingJAXB {
 		for (Person person : list) {
 			System.out.println(person.toString());
 		}
+	}
+	
+	/**
+	 * This function will write a JSON file with the new people added
+	 * by the function addPeople
+	 * @throws Exception
+	 */
+	public static void doJSON() throws Exception {
+		addPeople();
+		// Initialize the Jackson Object Mapper 
+		ObjectMapper mapper = new ObjectMapper();
+		// Initialize the Jackson Module to process JAXB annotations
+        JaxbAnnotationModule module = new JaxbAnnotationModule();
+		// Follow necessary configurations
+        mapper.registerModule(module);
+		mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
+        mapper.configure(SerializationFeature.ORDER_MAP_ENTRIES_BY_KEYS, true);
+        
+        // Get result from mapper and write it to a new JSON file
+        System.out.println("############################");
+        System.out.println("Write into out/new_people.json JSON File");
+        String result = mapper.writeValueAsString(people);
+        mapper.writeValue(new File("out/new_people.json"), people);
+        System.out.println("############################");
+        System.out.println("out/new_people.json: ");
+        // Print the result also into the System standard output
+        System.out.println(result);
+        System.out.println("############################");
 	}
 }

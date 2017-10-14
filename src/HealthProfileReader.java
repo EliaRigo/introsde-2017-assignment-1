@@ -27,6 +27,7 @@ public class HealthProfileReader {
 			
 			MarshallingJAXB.doMarshalling();
 			MarshallingJAXB.doUnMarshalling();
+			MarshallingJAXB.doJSON();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

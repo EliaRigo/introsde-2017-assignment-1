@@ -1,0 +1,75 @@
+{
+  "person" : [ {
+    "firstname" : "Gianni",
+    "lastname" : "Longo",
+    "birthdate" : "1999-08-21",
+    "activitypreference" : {
+      "name" : "Cycling",
+      "description" : "Cycling in the beatiful Trentino landscape",
+      "place" : "Trentino-A.A.",
+      "startDate" : "2017-10-14T12:00:00.0",
+      "id" : 121
+    },
+    "id" : 21
+  }, {
+    "firstname" : "Marco",
+    "lastname" : "Pinozzo",
+    "birthdate" : "1991-03-04",
+    "activitypreference" : {
+      "name" : "Boxe",
+      "description" : "Perform Boxe with my coach",
+      "place" : "Sanbabila Gym",
+      "startDate" : "2017-10-20T17:45:00.0",
+      "id" : 122
+    },
+    "id" : 22
+  }, {
+    "firstname" : "Giuseppe",
+    "lastname" : "Siano",
+    "birthdate" : "1995-04-15",
+    "activitypreference" : {
+      "name" : "Curling",
+      "description" : "Curling with my friends",
+      "place" : "Palaghiaccio Trento",
+      "startDate" : "2017-10-29T21:00:00.0",
+      "id" : 123
+    },
+    "id" : 23
+  }, {
+    "firstname" : "Gianni",
+    "lastname" : "Longo",
+    "birthdate" : "1999-08-21",
+    "activitypreference" : {
+      "name" : "Cycling",
+      "description" : "Cycling in the beatiful Trentino landscape",
+      "place" : "Trentino-A.A.",
+      "startDate" : "2017-10-14T12:00:00.0",
+      "id" : 121
+    },
+    "id" : 21
+  }, {
+    "firstname" : "Marco",
+    "lastname" : "Pinozzo",
+    "birthdate" : "1991-03-04",
+    "activitypreference" : {
+      "name" : "Boxe",
+      "description" : "Perform Boxe with my coach",
+      "place" : "Sanbabila Gym",
+      "startDate" : "2017-10-20T17:45:00.0",
+      "id" : 122
+    },
+    "id" : 22
+  }, {
+    "firstname" : "Giuseppe",
+    "lastname" : "Siano",
+    "birthdate" : "1995-04-15",
+    "activitypreference" : {
+      "name" : "Curling",
+      "description" : "Curling with my friends",
+      "place" : "Palaghiaccio Trento",
+      "startDate" : "2017-10-29T21:00:00.0",
+      "id" : 123
+    },
+    "id" : 23
+  } ]
+}
