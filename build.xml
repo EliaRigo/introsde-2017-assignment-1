@@ -55,7 +55,6 @@
 	<property name="build.dir" value="build" />
 	<property name="src.dir" value="src" />
 	<property name="lib.dir" value="lib" />
-	<property name="xjc.package" value="bookstore.generated" />
 
 	<!-- ================================= 
 	          target: resolve downloads the dependencies to your lib folder              
@@ -91,10 +90,6 @@
 		<echo message="Clean has been called" />
 		<delete dir="${build.dir}" />
 		<echo message="${build.dir} has been deleted" />
-		<delete dir="${src.dir}/${xjc.package}" />
-		<echo message="${src.dir}/${xjc.package} has been deleted" />
-		<delete file="catalog.xml" />
-		<echo message="catalog.xml has been deleted" />
 	</target>
 
 	<target name="compile" depends="init">
@@ -110,7 +105,7 @@
 
 	<!-- Task 1 -->
 	<target name="execute.printall">
-		<echo message="This function will print all the person in the file people.xml" />
+		<echo message="#1. This function will print all the person in the file people.xml" />
 		<java classname="HealthProfileReader" classpath="${build.dir}">
 			<arg value="printall"/>
 			<classpath>
@@ -124,7 +119,7 @@
 	
 	<!-- Task 2 -->
 	<target name="execute.get-activity">
-			<echo message="This function will print the ActivityPreference of Person with ID 5" />
+			<echo message="#2. This function will print the ActivityPreference of Person with ID 5" />
 			<java classname="HealthProfileReader" classpath="${build.dir}">
 				<arg value="get-activity"/>
 				<arg value="5"/>
@@ -137,9 +132,25 @@
 			</java>
 		</target>
 	
+	<!-- Task 3 -->
+	<target name="execute.get-activity-date">
+			<echo message="#3. This function will print the ActivityPreference with a date equal, greather, or less than one specified " />
+			<java classname="HealthProfileReader" classpath="${build.dir}">
+				<arg value="get-activity-date"/>
+				<arg value=">"/>
+				<arg value="2017-10-13"/>
+				<classpath>
+					<fileset dir="${lib.dir}">
+						<include name="**/*.jar" />
+						<include name="*.jar" />
+					</fileset>
+				</classpath>
+			</java>
+		</target>
+	
 	<!-- Task 4 -->
 		<target name="execute.marshalling">
-				<echo message="This function will perform the marshalling creating a new XML File in the path %ROOT_PROJECT/new_people.xml% " />
+				<echo message="#4. This function will perform the marshalling creating a new XML File in the path %ROOT_PROJECT/new_people.xml% " />
 				<java classname="HealthProfileReader" classpath="${build.dir}">
 					<arg value="marshalling"/>
 					<classpath>
@@ -153,7 +164,7 @@
 	
 	<!-- Task 5 -->
 		<target name="execute.unmarshalling">
-				<echo message="This function will perform the unmarshalling from a xml File" />
+				<echo message="#5. This function will perform the unmarshalling from a xml File" />
 				<java classname="HealthProfileReader" classpath="${build.dir}">
 					<arg value="unmarshalling"/>
 					<classpath>
@@ -166,7 +177,7 @@
 			</target>
 	<!-- Task 6 -->
 		<target name="execute.json">
-				<echo message="This function will write a JSON file with the new people added by the function addPeople" />
+				<echo message="#6. This function will write a JSON file with the new people added by the function addPeople" />
 				<java classname="HealthProfileReader" classpath="${build.dir}">
 					<arg value="json"/>
 					<classpath>
@@ -178,7 +189,7 @@
 				</java>
 			</target>
 	
-	<target name="execute.evaluation" depends="compile, execute.printall, execute.get-activity, execute.marshalling, execute.unmarshalling, execute.json">
+	<target name="execute.evaluation" depends="compile, execute.printall, execute.get-activity, execute.get-activity-date, execute.marshalling, execute.unmarshalling, execute.json">
 		<echo message="DONE" />
 	</target>
 </project>
