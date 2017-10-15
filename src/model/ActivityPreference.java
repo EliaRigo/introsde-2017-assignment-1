@@ -7,13 +7,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlRootElement(name="activitypreference")
-@XmlType(propOrder = { "name", "description", "place", "startDate" })
+@XmlType(propOrder = { "name", "description", "place", "startdate" })
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ActivityPreference {
 	private String name;
 	private String description;
 	private String place;
-	private String startDate;
+	private String startdate;
 	// XmlAttribute indicates that this field will be serialized as an attribute
 	@XmlAttribute(name="id")
 	private Long activityPreferenceId;
@@ -27,7 +27,7 @@ public class ActivityPreference {
 		this.name = name;
 		this.description = description;
 		this.place = place;
-		this.startDate = startDate;
+		this.startdate = startDate;
 	}
 	
 	// Follow getter and setter for every attribute of this class
@@ -50,10 +50,10 @@ public class ActivityPreference {
 		this.place = place;
 	}
 	public String getStartDate() {
-		return startDate;
+		return startdate;
 	}
 	public void setStartDate(String startDate) {
-		this.startDate = startDate;
+		this.startdate = startDate;
 	}
 	public Long getActivityPreferenceId() {
 		return activityPreferenceId;
@@ -69,7 +69,7 @@ public class ActivityPreference {
 		tmp += String.format("|    |--- Name: %s\n", this.name);
 		tmp += String.format("|    |--- Description: %s\n", this.description);
 		tmp += String.format("|    |--- Place: %s\n", this.place);
-		tmp += String.format("|    |--- Start Date: %s", this.startDate);
+		tmp += String.format("|    |--- Start Date: %s", this.startdate);
 		
 		return tmp;
 	}
