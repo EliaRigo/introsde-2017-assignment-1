@@ -8,7 +8,7 @@
             <name>Cycling</name>
             <description>Cycling in the beatiful Trentino landscape</description>
             <place>Trentino-A.A.</place>
-            <startDate>2017-10-14T12:00:00.0</startDate>
+            <startdate>2017-10-14T12:00:00.0</startdate>
         </activitypreference>
     </person>
     <person id="22">
@@ -19,7 +19,7 @@
             <name>Boxe</name>
             <description>Perform Boxe with my coach</description>
             <place>Sanbabila Gym</place>
-            <startDate>2017-10-20T17:45:00.0</startDate>
+            <startdate>2017-10-20T17:45:00.0</startdate>
         </activitypreference>
     </person>
     <person id="23">
@@ -30,7 +30,7 @@
             <name>Curling</name>
             <description>Curling with my friends</description>
             <place>Palaghiaccio Trento</place>
-            <startDate>2017-10-29T21:00:00.0</startDate>
+            <startdate>2017-10-29T21:00:00.0</startdate>
         </activitypreference>
     </person>
 </people>

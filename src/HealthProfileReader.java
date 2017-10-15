@@ -20,14 +20,28 @@ public class HealthProfileReader {
 
 	public static void main(String[] args) {
 		try {
-			init();
-			printAll();
-			XPathController xp = new XPathController(database);
-			System.out.println(xp.getActivityPreferenceByPeopleId(5));
-			
-			MarshallingJAXB.doMarshalling();
-			MarshallingJAXB.doUnMarshalling();
-			MarshallingJAXB.doJSON();
+			switch(args[0]) {
+				case "printall": {
+					init();
+					printAll();
+				} break;
+				case "get-activity": {
+					XPathController xp = new XPathController(database);
+					System.out.println(xp.getActivityPreferenceByPeopleId(Integer.parseInt(args[1])));
+				} break;
+				case "marshalling" : {
+					MarshallingJAXB.doMarshalling();
+				} break;
+				case "unmarshalling": {
+					MarshallingJAXB.doUnMarshalling();
+				} break;
+				case "json" : {
+					MarshallingJAXB.doJSON();
+				} break;
+				default: {
+					System.out.println("Option not found");
+				}
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
