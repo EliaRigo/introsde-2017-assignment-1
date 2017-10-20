@@ -106,7 +106,7 @@
 	<!-- Task 1 -->
 	<target name="execute.printall">
 		<echo message="#1. This function will print all the person in the file people.xml" />
-		<java classname="HealthProfileReader" classpath="${build.dir}">
+		<java classname="PeopleReader" classpath="${build.dir}">
 			<arg value="printall"/>
 			<classpath>
 				<fileset dir="${lib.dir}">
@@ -120,7 +120,7 @@
 	<!-- Task 2 -->
 	<target name="execute.get-activity">
 			<echo message="#2. This function will print the ActivityPreference of Person with ID 5" />
-			<java classname="HealthProfileReader" classpath="${build.dir}">
+			<java classname="PeopleReader" classpath="${build.dir}">
 				<arg value="get-activity"/>
 				<arg value="5"/>
 				<classpath>
@@ -135,7 +135,7 @@
 	<!-- Task 3 -->
 	<target name="execute.get-activity-date">
 			<echo message="#3. This function will print the ActivityPreference with a date equal, greather, or less than one specified " />
-			<java classname="HealthProfileReader" classpath="${build.dir}">
+			<java classname="PeopleReader" classpath="${build.dir}">
 				<arg value="get-activity-date"/>
 				<arg value=">"/>
 				<arg value="2017-10-13"/>
@@ -151,7 +151,7 @@
 	<!-- Task 4 -->
 		<target name="execute.marshalling">
 				<echo message="#4. This function will perform the marshalling creating a new XML File in the path %ROOT_PROJECT/new_people.xml% " />
-				<java classname="HealthProfileReader" classpath="${build.dir}">
+				<java classname="PeopleReader" classpath="${build.dir}">
 					<arg value="marshalling"/>
 					<classpath>
 						<fileset dir="${lib.dir}">
@@ -165,7 +165,7 @@
 	<!-- Task 5 -->
 		<target name="execute.unmarshalling">
 				<echo message="#5. This function will perform the unmarshalling from a xml File" />
-				<java classname="HealthProfileReader" classpath="${build.dir}">
+				<java classname="PeopleReader" classpath="${build.dir}">
 					<arg value="unmarshalling"/>
 					<classpath>
 						<fileset dir="${lib.dir}">
@@ -178,7 +178,7 @@
 	<!-- Task 6 -->
 		<target name="execute.json">
 				<echo message="#6. This function will write a JSON file with the new people added by the function addPeople" />
-				<java classname="HealthProfileReader" classpath="${build.dir}">
+				<java classname="PeopleReader" classpath="${build.dir}">
 					<arg value="json"/>
 					<classpath>
 						<fileset dir="${lib.dir}">

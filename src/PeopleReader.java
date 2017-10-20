@@ -13,7 +13,7 @@ import dao.PeopleStore;
  * @author EliaRigo
  *
  */
-public class HealthProfileReader {
+public class PeopleReader {
 
 	public static File database = new File("people.xml");
 	public static PeopleStore people = new PeopleStore();

@@ -23,7 +23,7 @@ The **src** folder contains all the Java classes necessary to perform the task r
 In particular:
 * The **dao** package contains the PeopleStore class necessary to perform the operation of marshaling, unmarshalling and JSONification.
 * The **model** package contains all the model class of our service (Person.java and ActivityPerson.java)
-* The **default** package contains the "logical" classes: ActivityProfileReader.java, MarshallingJAXB.java and XPATHController.java.
+* The **default** package contains the "logical" classes: PeopleReader.java, MarshallingJAXB.java and XPATHController.java.
 
 The **out** folder contains an example of generated output by the task of the assignment (new_people.xml and new_people.json)
 
@@ -36,7 +36,7 @@ In the **root** folder there is:
 
 ## Tasks
 
-The **ActivityProfileReader** contains a switch with the 6 tasks of the assignment.
+The **PeopleReader** contains a switch with the 6 tasks of the assignment.
 It is possible to launch one of this task simply passing the following first arguments:
 * ```printall``` : this function display all the people in the file people.xml
 * ```get-activity```: this function accepts the person id as a second argument and prints the ActivityPreference of the person with that id
